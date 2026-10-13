@@ -1,0 +1,187 @@
+ @import url('https://fonts.googleapis.com/css2?family=Black+Ops+One&family=Titillium+Web:wght@400;600;700&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Black+Ops+One&family=Playwrite+GB+J:ital,wght@0,100..400;1,100..400&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Black+Ops+One&family=Crimson+Text:ital,wght@0,400;0,600;0,700;1,400;1,600;1,700&family=Lexend+Deca:wght@100..900&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Black+Ops+One&family=Crimson+Text:ital,wght@0,400;0,600;0,700;1,400;1,600;1,700&family=Lexend+Deca:wght@100..900&family=Titillium+Web:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700&display=swap');
+  
+        * { box-sizing: border-box; }
+         h1{
+         font-family: "Black Ops One", system-ui;
+         text-transform: uppercase;
+         letter-spacing: 2px;
+    }
+    h2, h3{
+         font-family: "Lexend Deca", sans-serif;
+         font-optical-sizing: auto;
+    }
+    a{
+        font-family: "Lexend Deca", sans-serif;
+        font-optical-sizing: auto;
+    } 
+    p, label, span{
+        
+        font-family: "Titillium Web", sans-serif;
+        font-style: initial;
+    }
+    span{
+         font-weight: bold;
+    }
+
+   body {
+        margin: 0;
+        min-height: 100vh;
+        display: flex;
+        flex-direction: column;
+            }
+    .padding{
+        padding: 100px;
+    }
+    .display {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+            }
+            
+    .display span {
+        padding: 10px;
+            }
+            
+            
+     #ir-arriba {
+    position: fixed;
+    right: 2em;
+    bottom: 1em;
+    width: 3.4em;
+    height: 3.4em;
+    background-color: #ff9900;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.3);
+    z-index: 1000;
+    transition: background-color 0.3s ease;
+}
+
+#ir-arriba img {
+    width: 60%;
+    height: auto;
+    display: block;
+}
+
+#ir-arriba:hover {
+    background-color: #27ae60;
+}
+            
+    #derechos {
+        background-color: #01331c;
+        color: white;
+        padding: 6px;
+        width: 100%;
+        margin-top: auto;
+            }
+            .row{
+        display: flex;
+        justify-content: space-around;
+        align-items: stretch;
+        flex-wrap: nowrap;
+            }    
+            .col{
+        width: 100%;
+        height: auto;
+        display: block;
+            }
+            
+            
+            
+     .beneficios-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 50px 40px;
+    padding: 60px 40px;
+    padding-top: 0px;
+    background-color: #F7F6EC;
+}
+
+.beneficio-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 160px;
+    text-align: center;
+}
+
+.beneficio-circulo {
+    width: 130px;
+    height: 130px;
+    border-radius: 50%;
+    background-color: #02542D;
+    border: 3px solid #02542D;
+    outline: 2px solid #02542D;
+    outline-offset: 4px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 18px;
+}
+
+.beneficio-circulo i {
+    font-size: 46px;
+    color: white;
+}
+
+.beneficio-item span {
+    color: #02542D;
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 1.3;
+}
+
+.beneficio-svg {
+    width: 60px;   /* controla el tamaño del ícono dentro del círculo */
+    height: 60px;
+}
+
+/* 1. Definimos la animación llamada "subirDesdeAbajo" */
+@keyframes subirDesdeAbajo {
+    0% {
+        opacity: 0; /* Totalmente invisible */
+        transform: translateY(100px); /* Empieza 100px más abajo de su posición original */
+    }
+    100% {
+        opacity: 1; /* Totalmente visible */
+        transform: translateY(0); /* Vuelve a su posición original */
+    }
+}
+
+#Informacion .padding{
+    padding-top: 10px;
+}
+
+#plano{
+    background-color: #F7F6EC;
+}
+
+#frase{
+        text-align: center;
+        padding: 10px;
+        font-size: 45px;
+        color:#FFCC00;
+        margin-bottom: 20px;
+    }
+    
+    #frase h2{
+        margin-bottom: 10px;
+    }
+    #frase .trilux-titulo {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-content: stretch;
+    justify-content: center;
+}
+
+.mapa-oficina {
+    width: 100%;
+    aspect-ratio: 16/9;
+}

@@ -1,0 +1,223 @@
+
+body{/* Regla de estilos para la etiqueta body */
+    
+    margin: 0;/* Así se elimina el margen por defecto de body */
+    letter-spacing: 1px;
+    font-family: Metropolis, sans-serif;
+}
+html{
+    scroll-behavior: smooth; /*para que funcione el scrol*/
+}
+
+#main-header{
+    padding: 0px 15px 0px 15px;
+    color: white;
+    text-transform: uppercase;
+    font-size: 11px;
+    line-height: 15px;
+    font-weight: 500;
+    letter-spacing: 0.8px;
+}
+.conteiner-main{
+    background-color: #02542D;
+}
+
+.row{
+    display: flex;
+    justify-content: space-between; /* uno queda a la izquierda, otro a la derecha */
+    align-items: center;
+}
+
+
+
+.derecha {
+    display: flex;
+    padding: 12px 20px 12px 20px;
+}
+
+.izquierda
+
+ {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: flex-end;
+    letter-spacing: 0.8px;
+}
+#main-header .izquierda
+ {
+    display: flex;
+    text-align: center;
+    align-items: flex-end; 
+ }
+ .margen1{
+    display: flex;
+    padding: 12px 20px 12px 20px; 
+     gap: 30px; /*separacion entre display uuwu*/
+ }
+
+ .main-image {
+    width: 100%;
+    height: auto;
+}
+
+ .img-fluid{
+    max-width: 100%;
+}
+
+/* 1. Definimos la animación llamada "subirDesdeAbajo" */
+@keyframes subirDesdeAbajo {
+    0% {
+        opacity: 0; /* Totalmente invisible */
+        transform: translateY(100px); /* Empieza 100px más abajo de su posición original */
+    }
+    100% {
+        opacity: 1; /* Totalmente visible */
+        transform: translateY(0); /* Vuelve a su posición original */
+    }
+}
+
+ .display{
+    display: flex;
+    align-content: space-around;
+    justify-content: center;
+    align-items: center;
+    }
+    .display span{
+        padding: 10px;
+    }
+    .row{
+        display: flex;
+    }
+    .col{
+    flex-basis: 0; 
+    flex-grow: 1;
+    /* Con ambas propiedades las cajas tienen el mismo ancho */
+    box-sizing: border-box; /* Para que el padding no incremente el ancho (en este caso) */
+}
+.col8{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    color: white;
+}
+
+.col8 span{
+    margin-bottom: 20px;
+    margin-left: 20px;
+}
+
+.col8 p{
+    color: #FFCC00;
+    font-size: 12px;
+    margin-left: 20px;
+    margin-top: 30px;
+}
+
+.primera-fila img {
+    height: 120px;
+    width: auto;
+    display: block;
+}
+.quinta-fila{
+    margin-left: 40px;
+}
+.col2 span{
+    margin: 0px;
+}
+
+.segunda-fila span{
+    cursor: pointer;
+}
+
+.tercera-fila span{
+    cursor: pointer;
+}
+.icon i{
+    font-size: 25px;
+    cursor: pointer;
+}
+
+.icon i:hover{
+    color: #FFCC00;
+    text-decoration: none;
+}
+.segunda-fila span:hover{
+    color: #FFCC00;
+    text-decoration: none;
+}
+
+.tercera-fila span:hover{
+    color: #FFCC00;
+    text-decoration: none;
+}
+.numero-x{
+    font-size: 30px;
+}
+.icon{
+    margin-top: 10px
+}
+.footer-grid {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: auto auto; /* fila 1 = títulos, fila 2 = subtítulos/redes */
+    row-gap: 30px;
+    margin-left: 20px;
+    color:white;
+}
+
+.footer-grid > div {
+    display: flex;
+    flex-direction: column;
+}
+
+.footer-grid span{
+    margin-top: 20px;
+}
+
+#ir-arriba {
+    position: fixed;
+    right: 2em;
+    bottom: 1em;
+    width: 3.4em;
+    height: 3.4em;
+    background-color: #ff9900;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.3);
+    z-index: 1000;
+    transition: background-color 0.3s ease;
+}
+
+
+#ir-arriba:hover {
+    background-color: #27ae60;
+}
+
+.linea-corta {
+    width: 40px;
+    height: 2px;
+    background-color: #ffcc00;
+}
+
+/*animacion*/
+
+.animar-subir{
+    opacity: 0;
+    transform: translateY(80px);
+    transition: opacity 1s ease-out, transform 1s ease-out;
+}
+.animar-subir.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+.col-imagen-somos img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+.col-imagen-somos.animar-subir {
+    transition: opacity 0.9s ease-out, transform 0.9s ease-out;
+}
